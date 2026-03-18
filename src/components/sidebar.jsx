@@ -1,4 +1,3 @@
-import logo from "../assets/logo.svg";
 import {
   LuLayoutDashboard,
   LuBookOpen,
@@ -51,7 +50,7 @@ export default function Sidebar({ isOpen, setIsOpen }) {
         <div className="flex items-cente justify-between px-4  border-b md:border-none">
           <NavLink to="/dashboard" className="flex items-center">
             <img
-              src={logo}
+              src="/skilltrixa.svg"
               alt="SkillTrixa Logo"
               className="h-24 md:h-32 w-auto object-contain lg:-mt-6"
             />

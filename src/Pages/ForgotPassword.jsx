@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Mail } from "lucide-react";
-import logo from "../assets/logo.svg";
 
 export default function ForgotPassword() {
   const navigate = useNavigate();
@@ -27,7 +26,7 @@ export default function ForgotPassword() {
     <div className="min-h-screen bg-slate-50 flex items-center justify-center px-4 py-10">
       <div className="w-full max-w-md rounded-2xl border border-blue-100 bg-blue-50/60 shadow-sm p-6">
         <div className="flex flex-col items-center mb-6">
-          <img src={logo} alt="SkillTrixa Logo" className="h-20 w-auto object-contain" />
+          <img src="/skilltrixa.svg" alt="SkillTrixa Logo" className="h-20 w-auto object-contain" />
           <h1 className="text-2xl font-bold text-slate-900 mt-2">
             Forgot Password
           </h1>
