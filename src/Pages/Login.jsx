@@ -16,9 +16,14 @@ export default function Login() {
       return;
     }
 
-    setError("");
-    loginUser();
-    navigate("/dashboard");
+    const result = loginUser(email, password);
+    
+    if (result.success) {
+      setError("");
+      navigate("/dashboard");
+    } else {
+      setError(result.error);
+    }
   };
 
   return (
